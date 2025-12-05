@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Bestie</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #e0ecff; /* light blue */
+        color: #003b8e; /* deep blue text */
+        overflow-x: hidden;
+    }
+
+    header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(180deg, #4aaaff, #1e56a0); /* bright to deep blue */
+        animation: fadeIn 1.2s ease-in;
+        color: white;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #90cfff; }
+        to   { text-shadow: 0 0 22px #4aaaff; }
+    }
+
+    /* Timeline Section */
+    .timeline {
+        width: 80%;
+        margin: 60px auto;
+        position: relative;
+    }
+
+    .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 3px;
+        background: #1e56a0; /* deep blue line */
+        top: 0;
+        bottom: 0;
+    }
+
+    .entry {
+        width: 45%;
+        padding: 20px;
+        background: #b9d8ff; /* pastel blue boxes */
+        border-radius: 15px;
+        position: relative;
+        margin: 30px 0;
+        animation: slideUp 0.8s ease-out;
+        color: #003b8e;
+        box-shadow: 0 0 15px rgba(74, 170, 255, 0.4);
+    }
+
+    .entry:hover {
+        transform: scale(1.05);
+        transition: 0.4s;
+        box-shadow: 0 0 22px rgba(30, 86, 160, 0.7);
+    }
+
+    .left { left: 0; }
+    .right { left: 55%; }
+
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Navigation Buttons */
+    .nav-container {
+        text-align: center;
+        margin: 60px 0;
+    }
+
+    .nav-btn {
+        display: inline-block;
+        margin: 10px;
+        padding: 14px 28px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        color: white;
+        background: #1e56a0; /* bold blue */
+        transition: 0.3s;
+        box-shadow: 0 0 10px rgba(74, 170, 255, 0.6);
+    }
+
+    .nav-btn:hover {
+        background: #4aaaff;
+        transform: translateY(-3px);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎉 Happy Birthday Bestie 🎉</h1>
+    <p>Your journey with me has been crazy, chaotic, and perfect.</p>
+</header>
+
+<section class="timeline">
+    <div class="entry left">⭐ First time we talked</div>
+    <div class="entry right">⭐ First MUN together</div>
+    <div class="entry left">⭐ Online stage era</div>
+    <div class="entry right">⭐ Class 9–10 memories</div>
+    <div class="entry left">⭐ Class 11–lifetime bond</div>
+</section>
+
+<div class="nav-container">
+    <a class="nav-btn" href="first_mun_with_dhriti.html">FIRST MUN</a>
+    <a class="nav-btn" href="online_friendship_dhriti.html">ONLINE STAGE</a>
+    <a class="nav-btn" href="class9_10_dhriti.html">CLASS 9–10</a>
+    <a class="nav-btn" href="class11_lifetime_dhriti.html">CLASS 11–LIFETIME</a>
+</div>
+
+</body>
+</html>
